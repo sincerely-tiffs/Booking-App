@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baby Massages 👶🏽</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #89cff0;
+      }
+      h2 {
+        text-align: center;
+        font-size: 18px;
+        border: 2px solid #89cff0;
+        border-radius: 10px;
+        padding: 20px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 14px;
+        border-style: double;
+        border-color: #c7b198;
+      }
+      p {
+        font-size: 15px;
+        line-height: 1.5;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        font-size: 18px;
+        background: #89cff0;
+        color: white;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 36px;
+        transition: all 200ms ease-in-out;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      }
+      button:hover {
+        opacity: 0.9;
+        color: #89cff0;
+        background: #fdfd96;
+        cursor: pointer;
+      }
+      .learn-more {
+        color: #89cff0;
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      .content {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+        background: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+        font-family: Helvetica, "Franklin Gothic Medium", "Arial Narrow", Arial;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+        color: #fdfd96;
+        font-style: italic;
+      }
+      .footer {
+        text-align: center;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Baby massage</h1>
+      <h2>The Benefits of Baby Massages</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/160/182/original/1259b01829d0defa1357068013c3fce0.jpg?1741901280"
+        alt="Baby being Massaged"
+      />
+      <p>
+        Infant massage is a gentle practice that can have numerous physical,
+        emotional, and developmental benefits for babies. It can help improve
+        circulation, promote better sleep, and alleviate discomfort from colic
+        or gas. Massaging an infant also strengthens the bond between parent and
+        child, fostering trust and emotional connection. The soothing touch can
+        help reduce stress and regulate the baby’s nervous system, leading to a
+        calmer disposition. Additionally, studies suggest that infant massage
+        can aid in developmental milestones by enhancing motor skills and
+        sensory awareness. Overall, incorporating infant massage into daily
+        routines can provide lasting benefits for both babies and parents alike.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Pediatric_massage"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on wikipedia
+      </a>
+      <button class="book-button">Book a session</button>
+      <p class="footer">This page was built by Tifanny Le Roux</p>
+    </div>
+    <script>
+      function book() {
+        let name = prompt("What is your name?");
+        let age = prompt("How many weeks old is your baby?");
+        let email = prompt("What is your email address?");
+
+        alert("Thank you " + name + "! We'll be in touch📧");
+      }
+
+      let bookButton = document.querySelector(".book-button");
+      bookButton.addEventListener("click", book);
+    </script>
+  </body>
+</html>
